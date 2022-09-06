@@ -26,13 +26,25 @@ window.onload = () => {
                 }
             ];
             for(const prop of properties) {
-                const entity = document.createElement("a-box");
+//                 const entity = document.createElement("a-box");
+//                 entity.setAttribute("scale", {
+//                     x: 20, 
+//                     y: 20,
+//                     z: 20
+//                 });
+//                 entity.setAttribute('material', { color: prop.color } );
+//                 entity.setAttribute('gps-new-entity-place', {
+//                     latitude: e.detail.position.latitude + prop.latDis,
+//                     longitude: e.detail.position.longitude + prop.lonDis
+//                 });
+                
+                 const entity = document.createElement("a-entity");
                 entity.setAttribute("scale", {
                     x: 20, 
                     y: 20,
                     z: 20
                 });
-                entity.setAttribute('material', { color: prop.color } );
+                entity.setAttribute('material',  "shader: flat; src: assets/prodList.png"  );
                 entity.setAttribute('gps-new-entity-place', {
                     latitude: e.detail.position.latitude + prop.latDis,
                     longitude: e.detail.position.longitude + prop.lonDis
