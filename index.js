@@ -33,7 +33,7 @@ window.onload = () => {
 //                     z: 20
 //                 });
 //                 entity.setAttribute('material', { color: prop.color } );
-//                 entity.setAttribute('gps-new-entity-place', {
+//                 entity.setAttribute('gps-entity-place', {
 //                     latitude: e.detail.position.latitude + prop.latDis,
 //                     longitude: e.detail.position.longitude + prop.lonDis
 //                 });
