@@ -44,11 +44,13 @@ window.onload = () => {
                     y: 20,
                     z: 20
                 });
-                entity.setAttribute('material',  "shader: flat; src: assets/prodList.png");
+                entity.setAttribute('material',  {shader: 'flat',src: 'assets/prodList.png'});
                 entity.setAttribute('gps-new-entity-place', {
                     latitude: e.detail.position.latitude + prop.latDis,
                     longitude: e.detail.position.longitude + prop.lonDis
                 });
+                entity.setAttribute('geometry',  {primitive: 'plane',height: 1, width: 1});
+                
                 
                 document.querySelector("a-scene").appendChild(entity);
             }
