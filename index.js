@@ -27,11 +27,11 @@ window.onload = () => {
             ];
             for(const prop of properties) {
                 const entity = document.createElement("a-box");
-                entity.setAttribute("scale", {
-                    x: 20, 
-                    y: 20,
-                    z: 20
-                });
+//                 entity.setAttribute("scale", {
+//                     x: 20, 
+//                     y: 20,
+//                     z: 20
+//                 });
                 entity.setAttribute('material', { color: prop.color } );
                 entity.setAttribute('gps-new-entity-place', {
                     latitude: e.detail.position.latitude + prop.latDis,
