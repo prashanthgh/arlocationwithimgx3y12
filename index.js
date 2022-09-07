@@ -28,9 +28,9 @@ window.onload = () => {
             for(const prop of properties) {
                 const entity = document.createElement("a-box");
                 entity.setAttribute("scale", {
-                    x: 100, 
-                    y: 100,
-                    z: 100
+                    x: 50, 
+                    y: 50,
+                    z: 50
                 });
                 entity.setAttribute('material', { color: prop.color } );
                 entity.setAttribute('gps-new-entity-place', {
